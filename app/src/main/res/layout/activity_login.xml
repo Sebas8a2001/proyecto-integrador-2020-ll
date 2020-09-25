@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
     android:weightSum="10">
 
@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Registrate con tu correo"
+            android:text="¡Bienvenido!"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/btnBack"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,93 +37,72 @@
             android:background="@android:color/transparent"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre completo"
-            app:layout_constraintBottom_toTopOf="@+id/editTextName"
-            app:layout_constraintStart_toStartOf="@+id/editTextName" />
-
-        <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="36dp"
-            android:background="@drawable/edit_text_round"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:text="Correo electronico"
             app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/editTextEmail" />
 
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginBottom="32dp"
             android:background="@drawable/edit_text_round"
             android:ems="10"
+            android:hint="Ingrese su email"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:text="Contraseña"
-            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextPassword" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/editTextTextPersonName6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="148dp"
             android:background="@drawable/edit_text_round"
             android:ems="10"
+            android:hint="Ingrese su clave"
             android:inputType="textPassword"
             android:padding="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="Correo electronico"
-            app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
-            app:layout_constraintStart_toStartOf="@+id/editTextEmail" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="52dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="32dp"
             android:background="@drawable/button_round"
-            android:text="Registrate"
+            android:text="Iniciar Sesion"
             android:textColor="@color/whiteText"
-            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintBottom_toTopOf="@+id/btnRecuperarPsw"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
         <View
             android:id="@+id/view"
@@ -134,6 +113,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <Button
+            android:id="@+id/btnRecuperarPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/transparent"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="@color/agroBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -147,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="¿Ya tienes una cuenta?"
+            android:text="¿ Eres nuevo ?"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -155,11 +145,11 @@
             android:gravity="center_horizontal" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:text="Inicia Sesión"
+            android:text="Registrate"
             android:textAlignment="center"
             android:textColor="@color/agroBlue"
             app:layout_constraintBottom_toBottomOf="parent"

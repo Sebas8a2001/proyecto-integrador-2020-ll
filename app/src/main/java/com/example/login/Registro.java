@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -19,17 +20,34 @@ import org.json.JSONObject;
 
 public class Registro extends AppCompatActivity implements View.OnClickListener {
 EditText etnombre,etusuario,etpassword,etedad;
-Button btn_registrar;
+Button btn_registrar, btnLogin;
+    private ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        etnombre= (EditText)findViewById(R.id.EditT_nombre);
-        etusuario=(EditText)findViewById(R.id.EditT_usuario);
-        etpassword=(EditText)findViewById(R.id.EditT_password);
-        btn_registrar=(Button)findViewById(R.id.Btn_registrar);
-
+        etnombre= (EditText)findViewById(R.id.editTextName);
+        etusuario=(EditText)findViewById(R.id.editTextEmail);
+        etpassword=(EditText)findViewById(R.id.editTextPassword);
+        btn_registrar=(Button)findViewById(R.id.btnSignUp);
+        btnLogin = findViewById(R.id.btnLogin);
+        btnBack = findViewById(R.id.btnBack);
         btn_registrar.setOnClickListener(this);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Registro.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Registro.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
