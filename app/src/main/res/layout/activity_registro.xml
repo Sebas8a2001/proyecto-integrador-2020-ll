@@ -40,6 +40,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
             android:text="Nombre completo"
             app:layout_constraintBottom_toTopOf="@+id/editTextName"
             app:layout_constraintStart_toStartOf="@+id/editTextName" />
@@ -105,7 +106,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="4dp"
             android:text="Correo electronico"
             app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
             app:layout_constraintStart_toStartOf="@+id/editTextEmail" />
