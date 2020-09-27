@@ -28,13 +28,13 @@
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
             android:layout_marginTop="35dp"
-            app:layout_constraintStart_toStartOf="@+id/textView6"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/homeAsUpIndicator"
-            android:background="@android:color/transparent"/>
+            app:srcCompat="?attr/homeAsUpIndicator" />
 
         <TextView
             android:id="@+id/textView2"

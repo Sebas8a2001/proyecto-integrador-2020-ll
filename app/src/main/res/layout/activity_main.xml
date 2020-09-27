@@ -16,25 +16,24 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="316dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintBottom_toTopOf="@+id/imgInicio"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/title_logo" />
 
         <ImageView
             android:id="@+id/imgInicio"
-            android:layout_width="290dp"
-            android:layout_height="290dp"
+            android:layout_width="354dp"
+            android:layout_height="267dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/txtInicio"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_watering_plant2" />
+            app:srcCompat="@drawable/watering_plant" />
 
         <TextView
             android:id="@+id/txtInicio"
@@ -49,6 +48,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:gravity="center_horizontal" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
