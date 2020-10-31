@@ -3,4 +3,9 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="greenPrimary">#19BA79</color>
+    <color name="agroBlue">#2273B2</color>
+    <color name="agroOrange">#FF6422</color>
+    <color name="agoYellow">#FFA122</color>
+    <color name="whiteText">#fff</color>
 </resources>
